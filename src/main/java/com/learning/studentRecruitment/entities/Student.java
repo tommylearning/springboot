@@ -11,7 +11,7 @@ public class Student {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
     private String name;
-    private int testScore;
+    private int test_score;
 
     public int getId() {
         return id;
@@ -30,10 +30,10 @@ public class Student {
     }
 
     public int getTestScore() {
-        return testScore;
+        return test_score;
     }
 
     public void setTestScore(int testScore) {
-        this.testScore = testScore;
+        this.test_score = testScore;
     }
 }

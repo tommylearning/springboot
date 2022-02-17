@@ -24,7 +24,7 @@ public class StudentController {
 
     @GetMapping("/student/{id}")
     public Student getStudentById(@PathVariable("id") int id){
-        return repository.getById(id);
+        return repository.findById(id).get();
     }
 
     @PostMapping("/student/{id}")
